@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointments</title>
+</head>
+<body>
+
+<h1>Appointment History</h1>
+
+<table border="1">
+
+<tr>
+    <th>ID</th>
+    <th>Patient</th>
+    <th>Doctor</th>
+    <th>Date</th>
+</tr>
+
+{% for appointment in appointments %}
+
+<tr>
+    <td>{{ appointment[0] }}</td>
+    <td>{{ appointment[1] }}</td>
+    <td>{{ appointment[2] }}</td>
+    <td>{{ appointment[3] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>

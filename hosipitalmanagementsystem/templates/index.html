@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>MediCare+ Hospital</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+
+
+body{
+
+font-family:'Segoe UI',sans-serif;
+background:#f8fbff;
+
+}
+
+
+
+.navbar{
+
+padding:18px 50px;
+
+box-shadow:0 3px 15px #ddd;
+
+}
+
+
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+color:#0d6efd;
+
+}
+
+
+
+.nav-link{
+
+font-weight:600;
+
+}
+
+
+
+.hero{
+
+padding:80px 50px;
+
+background:
+linear-gradient(120deg,#e8f3ff,#ffffff);
+
+}
+
+
+
+.hero h1{
+
+font-size:60px;
+font-weight:800;
+
+color:#152238;
+
+}
+
+
+
+.hero span{
+
+color:#0d6efd;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+color:#555;
+
+}
+
+
+
+.hero img{
+
+width:100%;
+border-radius:35px;
+
+box-shadow:0 10px 30px #ccc;
+
+}
+
+
+
+.btn-main{
+
+background:#0d6efd;
+color:white;
+padding:15px 30px;
+border-radius:15px;
+
+}
+
+
+
+.btn-main:hover{
+
+background:#084298;
+
+}
+
+
+
+.card{
+
+border:none;
+border-radius:25px;
+padding:30px;
+
+box-shadow:0 8px 25px #ddd;
+
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.icon{
+
+font-size:45px;
+
+}
+
+
+
+.stats{
+
+background:
+linear-gradient(90deg,#0d6efd,#20c997);
+
+color:white;
+
+padding:40px;
+
+border-radius:30px;
+
+}
+
+
+
+footer{
+
+background:#0f172a;
+color:white;
+padding:30px;
+
+}
+
+
+.portal{
+
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 20px #ddd;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+
+<nav class="navbar navbar-expand-lg bg-white">
+
+
+<div class="container">
+
+
+<a class="navbar-brand logo">
+
+🏥 MediCare+
+
+</a>
+
+
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+
+<ul class="navbar-nav ms-auto">
+
+
+<li>
+<a class="nav-link" href="/">
+Home
+</a>
+</li>
+
+
+
+<li>
+
+<a class="nav-link" href="/doctors">
+
+Doctors
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a class="nav-link" href="/symptom_checker">
+
+🤖 AI Checker
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a class="nav-link" href="/appointments">
+
+📅 Appointment History
+
+</a>
+
+</li>
+
+
+
+
+<li class="dropdown">
+
+<a class="nav-link dropdown-toggle"
+data-bs-toggle="dropdown">
+
+Login
+
+</a>
+
+
+
+<ul class="dropdown-menu">
+
+
+<li>
+
+<a class="dropdown-item"
+href="/login">
+
+Patient Login
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a class="dropdown-item"
+href="/doctor_login">
+
+Doctor Login
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a class="dropdown-item"
+href="/admin_login">
+
+Admin Login
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</li>
+
+
+
+<li>
+
+<a href="/register"
+class="btn btn-primary ms-3">
+
+Register
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- HERO -->
+
+
+<section class="hero">
+
+
+<div class="container">
+
+
+<div class="row align-items-center">
+
+
+<div class="col-md-6">
+
+
+
+<h1>
+
+
+Advanced
+
+<span>
+
+Healthcare
+
+</span>
+
+
+For Everyone
+
+
+</h1>
+
+
+
+<p>
+
+
+Experience smart healthcare with expert doctors,
+online appointments and AI powered symptom analysis.
+
+
+</p>
+
+
+
+
+<a href="/appointment"
+class="btn btn-main">
+
+
+📅 Book Appointment
+
+
+</a>
+
+
+
+
+<a href="/symptom_checker"
+class="btn btn-outline-primary ms-3 p-3">
+
+
+🤖 Check Symptoms
+
+
+</a>
+
+
+
+
+<br><br>
+
+
+<p>
+
+✔ Expert Doctors
+
+&nbsp;
+
+✔ 24/7 Support
+
+&nbsp;
+
+✔ Digital Healthcare
+
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+<div class="col-md-6">
+
+
+<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2">
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- FEATURES -->
+
+
+<div class="container mt-5">
+
+
+<h2 class="text-center mb-4">
+
+Our Services
+
+</h2>
+
+
+
+<div class="row">
+
+
+
+<div class="col-md-3">
+
+
+<div class="card text-center">
+
+
+<div class="icon">
+👨‍⚕️
+</div>
+
+
+<h4>
+Doctors
+</h4>
+
+
+<p>
+Find specialist doctors.
+</p>
+
+
+<a href="/doctors">
+
+View Doctors →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-3">
+
+
+<div class="card text-center">
+
+
+<div class="icon">
+📅
+</div>
+
+
+<h4>
+Appointments
+</h4>
+
+
+<p>
+Book and track appointments.
+</p>
+
+
+<a href="/appointment">
+
+Book Now →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-3">
+
+
+<div class="card text-center">
+
+
+<div class="icon">
+🤖
+</div>
+
+
+<h4>
+AI Assistant
+</h4>
+
+
+<p>
+Analyze symptoms instantly.
+</p>
+
+
+<a href="/symptom_checker">
+
+Try AI →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-3">
+
+
+<div class="card text-center">
+
+
+<div class="icon">
+🩺
+</div>
+
+
+<h4>
+Doctor Portal
+</h4>
+
+
+<p>
+Manage patient appointments.
+</p>
+
+
+<a href="/doctor_login">
+
+Doctor Login →
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- STATS -->
+
+
+<div class="container mt-5">
+
+
+<div class="stats">
+
+
+<div class="row text-center">
+
+
+<div class="col">
+
+<h2>
+
+5000+
+
+</h2>
+
+Patients
+
+</div>
+
+
+
+<div class="col">
+
+<h2>
+
+150+
+
+</h2>
+
+Doctors
+
+</div>
+
+
+
+
+<div class="col">
+
+<h2>
+
+10K+
+
+</h2>
+
+Appointments
+
+</div>
+
+
+
+<div class="col">
+
+<h2>
+
+24/7
+
+</h2>
+
+Care
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer class="mt-5 text-center">
+
+
+<h3>
+🏥 MediCare+ Hospital
+</h3>
+
+
+<p>
+
+Smart Healthcare Management System
+
+</p>
+
+
+<p>
+
+Flask + MySQL + Bootstrap
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+
+</script>
+
+
+</body>
+
+
+</html>
